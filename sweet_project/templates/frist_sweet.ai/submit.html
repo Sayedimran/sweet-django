@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          {% block css %}
+        <link rel="stylesheet" href="  {% static 'css/bootstrap.min.css'  %}  " />
+        <link rel="stylesheet" href="{% static 'css/cform.css' %} " />
+        {% endblock css %}
+    <title>{% block title %} sumbmited {% endblock title %}</title>
+</head>
+<body class="bg-black">
+        <div clas="frm-s ">
+               <h1 class="text-light text-center  ">
+                   your form submitted sucssesfully 
+               </h1>
+        </div>
+</body>
+</html>

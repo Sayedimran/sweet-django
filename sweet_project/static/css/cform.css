@@ -1,0 +1,69 @@
+
+
+body{
+    background: #020218;
+}
+#frm{ display: inline-block;
+       margin-top: 100px;
+      font-weight: 600;
+      text-align: center;
+       text-align: justify;
+      justify-content: start;
+      align-items: center;
+      color: #f4f4f4;
+      padding: 25px;
+      border-radius: 15px;
+      background: linear-gradient(rgb(0, 0, 0),rgb(40, 2, 2));
+}
+.form-cs{
+    padding: 15px;
+     width: 100px;
+    border-radius: 5px;
+    margin-left: 45px;
+    display: grid ;
+    align-items: center;
+    
+}
+.form-checks{
+    display: grid;
+    justify-content: center;
+   
+}
+
+input{
+    background:linear-gradient(rgba(138, 47, 112, 0.598), rgba(30, 12, 74, 0.741));
+    color: #f4f4f4;
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 3px;
+    height: 40px;
+} 
+
+textarea{
+    background:linear-gradient(rgba(173, 41, 173, 0.866), rgba(10, 10, 60, 0.929));
+    color: #f4f4f4;
+    margin-left: 50px;
+}
+
+.errorlist{
+    color: crimson;
+}
+.frm-s{
+    text-align: center;
+}
+
+
+
+.text-center{
+    align-items: center;
+    margin-top: 200px;
+}
+/* #id_frist_name{
+    margin-left: 55px;
+}
+#id_last_name{
+    margin-left: 15px;
+}
+#id_email{
+    margin-left: 50px;
+} */

@@ -1,0 +1,22 @@
+
+
+
+<form action="" method="post" noavalidate >
+
+    {% csrf_token %}
+
+    {% if form.non_field_errors %}
+
+    {% for error  in form.non_feild_errors %}
+
+    <p>{{error}}</p>
+
+    {% endfor %}
+    {% endif %}
+    {% for fm in form  %}
+
+    {{fm.label_tag}}{{fm}} {{fm.errors | striptags }} <br><br>
+    {% endfor %}
+    <input type="submit" value="save">
+     <a href="{% url 'logout' %}"> Logout</a>
+</form>

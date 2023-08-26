@@ -1,0 +1,24 @@
+{% load static %} 
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'css/cform.css' %}">
+{% endblock css %}
+{% block content %}
+
+<div class=" form-checks ">
+ <form action=""  method="POST" id="frm"  novalidate>  
+      {% csrf_token %} 
+      {{form.as_p}}
+
+      {% for field in form.as_p.visible_fields  %} 
+      {{field.label_tag}} 
+      {{field}}
+      {% endfor %}
+
+      {% for field in form.hidden_feilds   %}
+
+      {% endfor  %}
+     
+       <input type="submit"  value="submit" class="form-cs " >
+ </form>
+</div>{% endblock content %} 

@@ -1,0 +1,73 @@
+{% extends 'common_code/base.html' %}
+{% load static %}
+
+{% block title %} Our Sweets{% endblock title  %}
+
+
+
+{% block content %}
+
+
+<body style=" background: linear-gradient(rgb(18, 6, 33), rgba(0, 0, 0, 0.961) ,rgb(9, 9, 41)); ">
+  
+
+
+<div class=" d-grid  container p-5    "  >
+    {% comment %} <div class="row mt-5  ">
+      <div class="preview-card">
+        <div class="preview-card__wrp">
+          <div class="preview-card__item">
+            <div class="preview-card__img">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div> {% endcomment %}
+  
+      <div class="card-group  gap-4">
+        <div class="card rounded-2" style="width: 18rem;">
+          <img src="{% static 'imges/card1.jpg' %}" class="card-img-top rounded-2 " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary  ">Go somewhere</a>
+          </div>
+        </div>
+         
+        <div class="card rounded-2" style="width: 18rem;">
+          <img src="{% static 'imges/card1.jpg' %}" class="card-img-top rounded-2 " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card rounded-2" style="width: 18rem;">
+          <img src="{% static 'imges/card1.jpg' %}" class="card-img-top rounded-2 " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card rounded-2" style="width: 18rem;">
+          <img src="{% static 'imges/card1.jpg' %}" class="card-img-top rounded-2 " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+ 
+        </div>
+
+  
+  
+    </div>
+
+  </div>
+ 
+</body>
+  
+  {% endblock content %}
