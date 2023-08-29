@@ -4,8 +4,8 @@ from django.contrib.auth.forms import UserCreationForm
 from  . forms import ucfrm
 from django.contrib.auth.forms import AuthenticationForm,PasswordChangeForm ,SetPasswordForm
 from django.contrib.auth import  authenticate, login , logout , update_session_auth_hash
-
-
+from django.views import View 
+from django.views.generic.base import TemplateView
 
 
 # Create your views here. 
@@ -89,3 +89,13 @@ def  without_old_pass(request):
     
     else:
         return HttpResponseRedirect('/si/login')
+    
+
+
+class fristpro(View):
+    def get(self,request):
+        return render(request,'second_sweet.ai/black.html')
+
+
+class fristTempu(TemplateView):
+    template_name = 'second_sweet.ai/fristtm.htm ' 

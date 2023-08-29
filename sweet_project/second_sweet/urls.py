@@ -19,5 +19,7 @@ urlpatterns = [
     path('passc/',views.password_change, name="passwordchnage") ,
     
     path('withOutoldpass/',views.without_old_pass, name="withoutOldPassword") ,
-
+    
+    path('classblack/',views.fristpro.as_view()),
+    path('templteviw/',views.fristTempu.as_view()),
 ]
